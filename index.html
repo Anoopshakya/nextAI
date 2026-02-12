@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next AI | Operational Excellence for Amazon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-lime: #bef264;
+            --bg-dark: #06090e;
+            --bg-surface: #0c1117;
+            --border-subtle: rgba(255, 255, 255, 0.06);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: #9ca3af;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, h4, .font-display {
+            font-family: 'Outfit', sans-serif;
+        }
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .grid-bg {
+            background-image: 
+                linear-gradient(to right, var(--border-subtle) 1px, transparent 1px),
+                linear-gradient(to bottom, var(--border-subtle) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .glow-lime {
+            box-shadow: 0 0 40px -10px rgba(190, 242, 100, 0.2);
+        }
+        .supabase-card {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, transparent 100%);
+            border: 1px solid var(--border-subtle);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .supabase-card:hover {
+            border-color: rgba(190, 242, 100, 0.3);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, transparent 100%);
+        }
+        .gradient-heading {
+            background: linear-gradient(180deg, #fff 0%, #9ca3af 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @keyframes subtle-float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .float { animation: subtle-float 6s ease-in-out infinite; }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-dark); }
+        ::-webkit-scrollbar-thumb { background: #30363d; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #484f58; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+</head>
+<body class="antialiased overflow-x-hidden">
+    <div id="root"></div>
+</body>
+</html>
