@@ -16,24 +16,10 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
           {/* Brand Logo */}
           <a href="/" className="flex items-center group transition-opacity hover:opacity-90">
             <img 
-              src="https://raw.githubusercontent.com/shadcn-ui/ui/main/apps/www/public/logo.png" 
+              src="logo.png" 
               alt="Next AI Logo" 
-              className="h-8 md:h-9 object-contain hidden" // Hidden until actual file path is known, but I'll use a stylized reconstruction below for reliability
+              className="h-10 md:h-12 w-auto object-contain"
             />
-            {/* High-fidelity CSS/SVG reconstruction of the attached logo for immediate visual parity */}
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-7 bg-[#8cc63f] rounded-[8px] flex items-center justify-center rotate-[-2deg] shadow-[0_0_15px_rgba(140,198,63,0.3)]">
-                <svg viewBox="0 0 24 24" className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
-                  <path d="M7 12c0-3 2-5 5-5s5 2 5 5-2 5-5 5-5-2-5-5z" opacity="0.2" />
-                  <path d="M4 12c0-4 3-7 8-7s8 3 8 7-3 7-8 7-8-3-8-7z" strokeOpacity="0.1" />
-                  <path d="M8 12c0-2 1.5-3.5 4-3.5s4 1.5 4 3.5-1.5 3.5-4 3.5-4-1.5-4-3.5z" />
-                </svg>
-              </div>
-              <div className="flex items-baseline space-x-1 font-display font-black tracking-tight text-2xl">
-                <span className="text-[#334155]">Next</span>
-                <span className="text-[#8cc63f]">AI</span>
-              </div>
-            </div>
           </a>
           
           <div className="hidden lg:flex items-center space-x-8">

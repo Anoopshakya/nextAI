@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Play, Terminal, Cpu, Users, Activity } from 'lucide-react';
+import { ArrowRight, Terminal, Cpu, Users, Activity } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (

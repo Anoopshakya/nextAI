@@ -8,16 +8,14 @@ export const Footer: React.FC = () => {
       <div className="max-w-[1400px] mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-12 mb-20">
           <div className="col-span-2">
-            <div className="flex items-center space-x-3 mb-8">
-              <div className="w-9 h-6 bg-[#8cc63f] rounded-[6px] flex items-center justify-center rotate-[-2deg]">
-                 <svg viewBox="0 0 24 24" className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth="4">
-                  <path d="M8 12c0-2 1.5-3.5 4-3.5s4 1.5 4 3.5-1.5 3.5-4 3.5-4-1.5-4-3.5z" />
-                </svg>
-              </div>
-              <div className="flex items-baseline space-x-1 font-display font-black tracking-tight text-xl">
-                <span className="text-white">Next</span>
-                <span className="text-[#8cc63f]">AI</span>
-              </div>
+            <div className="flex items-center mb-8">
+              <a href="/" className="transition-opacity hover:opacity-90">
+                <img 
+                  src="logo.png" 
+                  alt="Next AI Logo" 
+                  className="h-10 md:h-12 w-auto object-contain"
+                />
+              </a>
             </div>
             <p className="text-gray-500 text-sm max-w-xs leading-relaxed mb-8 font-medium">
               Transforming Amazon operations through data science and operational mastery. We help brands dominate their categories with precision execution.
